@@ -1,0 +1,134 @@
+.container {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    background-color: #000000;
+}
+.container .content .bottom-content {
+    display: flex;
+}
+.content {
+    font-family: Tahoma, "Times New Roman";
+    text-align: left;
+    margin-left: 11px;
+    padding-right: 20px;
+    padding-left: 10px;
+    margin-top: 30px;
+}
+.bottom-content .card {
+    flex: 3;
+    background-image: -webkit-linear-gradient(270deg,rgba(255,255,255,1.00) 0%,rgba(220,208,208,1.00) 100%);
+    background-image: -moz-linear-gradient(270deg,rgba(255,255,255,1.00) 0%,rgba(220,208,208,1.00) 100%);
+    background-image: -o-linear-gradient(270deg,rgba(255,255,255,1.00) 0%,rgba(220,208,208,1.00) 100%);
+    background-image: linear-gradient(180deg,rgba(255,255,255,1.00) 0%,rgba(220,208,208,1.00) 100%);
+    border: 2px solid #CBCED1;
+    border-radius: 26px;
+    text-align: justify;
+    margin-right: 10px;
+    margin-left: auto;
+    padding-left: 7px;
+    padding-right: 10px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 7px;
+}
+.home {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    background-color: #000000;
+}
+body {
+    margin: 0;
+}
+.home-intro {
+    color: #FFFFFF;
+    font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", monospace;
+    text-align: center;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    flex: 1;
+    min-width: 50vw;
+    margin-top: auto;
+    margin-bottom: auto;
+    z-index: 999;
+}
+.home-photo img {
+    flex: 1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0% 42%;
+    float: left;
+    max-width: 67vw;
+    margin-left: -203px;
+}
+.home-photo {
+    margin-top: auto;
+    margin-bottom: auto;
+    overflow: hidden;
+}
+.home-intro h1 {
+    font-weight: 900;
+    font-size: 55px;
+}
+.quote {
+    font-size: 12px;
+    font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, serif;
+}
+.author {
+    font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, serif;
+    text-align: right;
+    font-size: 11px;
+    padding-right: 20px;
+    margin-right: 119px;
+}
+.container .home-intro button {
+    background-color: #00B6F3;
+    color: #FDFDFD;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    border-radius: 14px;
+    border: medium inset #D1ECEB;
+    -webkit-box-shadow: 0 0;
+    box-shadow: 0 0;
+}
+.card-button {
+    padding-top: 6px;
+    padding-right: 6px;
+    padding-bottom: 6px;
+    padding-left: 6px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-width: 768px){
+.container {
+    display: flex;
+    flex-direction: column-reverse;
+}
+.home-intro {
+    margin-top: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+}
+.home-photo {
+    margin-top: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    width: 100vw;
+}
+.home-photo img {
+    margin-left: 91px;
+}
+.home-intro quote .author {
+    margin-right: 4px;
+}
+}
