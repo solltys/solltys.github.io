@@ -109,6 +109,9 @@ body {
     margin-left: auto;
     margin-right: auto;
     border-radius: 6px;
+    background-color: #9FBEF9;
+    -webkit-box-shadow: 2px 2px 2px;
+    box-shadow: 2px 2px 2px;
 }
 
 @media (max-width: 768px){
