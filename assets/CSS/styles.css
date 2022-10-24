@@ -210,15 +210,43 @@ footer .footer-body {
 .bottom-content {
     display: flex;
     flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
 }
 #content {
     font-size: 12px;
-    display: flex;
     flex-direction: column;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 97%;
+}
+.footer-body {
+    margin: 0;
+    width: 102%;
+}
+.home   {
+    width: 100%;
 }
 .card {
     margin-bottom: 9px;
     -webkit-box-shadow: 0px 0px;
     box-shadow: 0px 0px;
+    margin-left: auto;
+    margin-right: auto;
+    flex: 1;
+    width: 100%;
+}
+.card img {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    max-width: 50%;
+}
+.top-content {
+    max-width: 75%;
+    width: 75%;
+    margin-bottom: 20px;
 }
 }
