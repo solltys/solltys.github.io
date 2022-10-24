@@ -9,31 +9,57 @@
 <body>
 <div class="container">
     <div class="home">
-    <div class="home-intro">
-        <h1><strong>Mr. Soltys</strong></h1>
-             <p class="quote">&quot;The Sooner you start to code, the longer the program will take.&quot;</p>
-            <p class="author">Roy Carslon</p>
-        <button>More Coming Soon...</button>
-    </div>
+        <div class="home-intro">
+            <h1><strong>Mr. Soltys</strong></h1>
+            <div class="quote">
+                <p>&quot;The Sooner you start to code, the longer the program will take.&quot;</p>
+                <p >Roy Carslon</p>
+            </div>
+            <button id="home-button">
+            <a href="#content">See More...</a>
+            </button>
+        </div>
         <div class="home-photo"><img src="assets/images/Eyes-cat.jpeg" alt="Eyes of a cat"></div>
     </div>
-    <div class="content">
-    <div class="top-content">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt soluta fugit officiis quidem corrupti incidunt error sit. Culpa maxime amet tenetur, et hic! Magni, repellendus, quisquam modi odio ipsa perspiciatis.</p></div>
-    <div class="bottom-content">
-        <div class="card card-a">
-            <div class="card-content">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur dolores alias quisquam maxime accusantium sed, neque exercitationem, eveniet laboriosam deleniti voluptates temporibus et delectus cumque error, similique itaque vero, quibusdam.</p>
-            </div>
-            <button class="card-button">Click here</button>
+    <div id="content">
+        <div class="top-content">
+            <p>Hey! It's sooo nice to see You here!!!</p>
         </div>
-        <div class="card card-b"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur dolores alias quisquam maxime accusantium sed, neque exercitationem, eveniet laboriosam deleniti voluptates temporibus et delectus cumque error, similique itaque vero, quibusdam.</p>
-            <button class="card-button">Click here</button></div>
-        <div class="card card-c"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur dolores alias quisquam maxime accusantium sed, neque exercitationem, eveniet laboriosam deleniti voluptates temporibus et delectus cumque error, similique itaque vero, quibusdam.</p>
-            <button class="card-button">Click here</button></div>
+        <div class="bottom-content">
+            <div class="card"> <img href="" src="assets/images/portfolio_sm.jpg" alt="my portfolio image"/> </div>
+            <div class="card"> <img href="" src="assets/images/blog_small.jpg" alt="my blog image"/></div>
+            <div class="card"> <img href="" src="assets/images/whoAmI_sm.jpg" alt="who am I image"/> </div>
+        </div>
     </div>
-    </div>
+    <footer>
+        <div class="footer-body">
+            <div class="footer-col-1">
+                <h2>Send me a message for more info....</h2>
+                <form>
+                    <div class="form-row">
+                        <input type="text" id="fistName" placeholder="First Name" required>
+                        <input type="text" id="lastName" placeholder="Last Name" required>
+                    </div>
+                    <div class="form-row">
+                        <input  type="email" placeholder="Email Address" required></div>
+                        <div class="form-row"><label for="contactReason">I would like to hear more about - </label>
+                        <select name="contactReason" required>
+                            <option value="">.....</option>
+                            <option value="portfolio">Portfolio</option>
+                            <option value="blog">Blog</option>
+                            <option value="colaboration">Colaboration</option>
+                        </select>
+                    </div>
+                    <div class="form-row">
+                        <label for="message">Your Message..</label>
+                        <textarea name="message" id="message" cols="30" rows="5"></textarea>
+                    </div>
+                </form>
+            </div>
+             <div class="footer-col-2">Additional</div>
+        </div>
+              
+    </footer>
 </div>
-    
 </body>
 </html>

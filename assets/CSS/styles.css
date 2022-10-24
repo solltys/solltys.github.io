@@ -4,10 +4,7 @@
     margin: 0;
     background-color: #000000;
 }
-.container .content .bottom-content {
-    display: flex;
-}
-.content {
+#content {
     font-family: Tahoma, "Times New Roman";
     text-align: left;
     padding-right: 20px;
@@ -18,37 +15,59 @@
     background-image: -o-linear-gradient(270deg,rgba(0,0,0,1.00) 0%,rgba(255,255,255,1.00) 100%);
     background-image: linear-gradient(180deg,rgba(0,0,0,1.00) 0%,rgba(255,255,255,1.00) 100%);
 }
-.content .top-content {
+.top-content  {
     margin-left: auto;
     margin-right: auto;
     padding-top: 10px;
     color: #FFFFFF;
-    width: 75%;
+    width: 61%;
     margin-bottom: 5%;
 }
+.top-content p  {
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "Dapifer Medium", Tahoma, "Times New Roman", sans-serif;
+    font-size: 36px;
+    text-align: center;
+}
 .bottom-content .card {
-    flex: 3;
-    background-image: -webkit-linear-gradient(270deg,rgba(255,255,255,1.00) 0%,rgba(220,208,208,1.00) 100%);
-    background-image: -moz-linear-gradient(270deg,rgba(255,255,255,1.00) 0%,rgba(220,208,208,1.00) 100%);
-    background-image: -o-linear-gradient(270deg,rgba(255,255,255,1.00) 0%,rgba(220,208,208,1.00) 100%);
-    background-image: linear-gradient(180deg,rgba(255,255,255,1.00) 0%,rgba(220,208,208,1.00) 100%);
-    border: 2px solid #CBCED1;
-    border-radius: 26px;
-    text-align: justify;
+    flex: 1;
+    padding-left: auto;
+    padding-right: auto;
+    margin-top: 0;
     margin-right: 10px;
-    padding-left: 7px;
-    padding-right: 10px;
+    margin-left: 5px;
+    margin-bottom: 0;
+}
+.bottom-content .card img {
+    -webkit-box-shadow: 1px 5px 8px 2px #999999;
+    -moz-box-shadow: 1px 5px 8px 2px #0d0c4c;
+    box-shadow: 1px 5px 8px 2px #999999;
+    transition: all .2s ease-in-out;
+    max-width: 100%;
+    border-radius: 3px;
+    min-height: 100%;
+    border: thin solid #C6C6C6;
+}
+.card img:hover {
+    transform:scale(1.1);
+    cursor: pointer;
+}
+.bottom-content {
     display: flex;
-    flex-direction: column;
-    padding-bottom: 7px;
-    margin-left: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10;
+    width: 85%;
+    margin-bottom: 10%;
 }
 .home {
     width: 100vw;
     height: 100vh;
     display: flex;
     flex-direction: row;
-    margin: 0;
+    margin-right: 2%;
+    margin-left: 2%;
     background-color: #000000;
 }
 .container .home {
@@ -60,15 +79,13 @@ body {
     color: #FFFFFF;
     font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", monospace;
     text-align: center;
-    padding-top: 10px;
-    padding-right: 10px;
-    padding-bottom: 10px;
-    padding-left: 10px;
     flex: 1;
     min-width: 50vw;
     margin-top: auto;
     margin-bottom: auto;
     z-index: 999;
+    display: block;
+    padding: auto;
 }
 .home-photo img {
     flex: 1;
@@ -87,41 +104,81 @@ body {
 .home-intro h1 {
     font-weight: 900;
     font-size: 55px;
-}
-.quote {
-    font-size: 12px;
-    font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, serif;
-}
-.author {
-    font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, serif;
-    text-align: right;
-    font-size: 11px;
-    padding-right: 20px;
-    margin-right: 119px;
-}
-.container .home-intro button {
-    background-color: #00B6F3;
-    color: #FDFDFD;
-    padding-top: 10px;
-    padding-right: 10px;
-    padding-bottom: 10px;
-    padding-left: 10px;
-    border-radius: 14px;
-    border: medium inset #D1ECEB;
-    -webkit-box-shadow: 0 0;
-    box-shadow: 0 0;
-}
-.card-button {
-    padding-top: 6px;
-    padding-right: 6px;
-    padding-bottom: 6px;
-    padding-left: 6px;
     margin-left: auto;
     margin-right: auto;
-    border-radius: 6px;
-    background-color: #9FBEF9;
-    -webkit-box-shadow: 2px 2px 2px;
-    box-shadow: 2px 2px 2px;
+}
+.quote {
+    font-size: 15px;
+    font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, serif;
+    margin-right: 10vw;
+    margin-left: 8vw;
+    text-align: right;
+    margin-bottom: 10%;
+}
+.home .home-intro a {
+    text-decoration: none;
+    color: #000000;
+}
+
+
+.container .home-intro button {
+    background-color: #DCE9ED;
+    color: #000000;
+    border-radius: 14px;
+    border: medium inset #D1ECEB;
+    padding: 10px;
+    transition: all .1s ease-in-out;
+}
+.container .home-intro button:hover {
+    background-color: #0F5468;
+    border: medium outset #D1ECEB;
+}
+footer .footer-body {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    background-image: -webkit-linear-gradient(270deg,rgba(255,255,255,1.00) 0%,rgba(252,252,252,1.00) 14.55%,rgba(211,210,210,1.00) 31.76%,rgba(170,170,170,1.00) 47.49%,rgba(149,147,147,1.00) 60.80%,rgba(127,127,127,1.00) 74.31%,rgba(0,0,0,1.00) 92.70%,rgba(0,0,0,1.00) 99.92%);
+    background-image: -moz-linear-gradient(270deg,rgba(255,255,255,1.00) 0%,rgba(252,252,252,1.00) 14.55%,rgba(211,210,210,1.00) 31.76%,rgba(170,170,170,1.00) 47.49%,rgba(149,147,147,1.00) 60.80%,rgba(127,127,127,1.00) 74.31%,rgba(0,0,0,1.00) 92.70%,rgba(0,0,0,1.00) 99.92%);
+    background-image: -o-linear-gradient(270deg,rgba(255,255,255,1.00) 0%,rgba(252,252,252,1.00) 14.55%,rgba(211,210,210,1.00) 31.76%,rgba(170,170,170,1.00) 47.49%,rgba(149,147,147,1.00) 60.80%,rgba(127,127,127,1.00) 74.31%,rgba(0,0,0,1.00) 92.70%,rgba(0,0,0,1.00) 99.92%);
+    background-image: linear-gradient(180deg,rgba(255,255,255,1.00) 0%,rgba(252,252,252,1.00) 14.55%,rgba(211,210,210,1.00) 31.76%,rgba(170,170,170,1.00) 47.49%,rgba(149,147,147,1.00) 60.80%,rgba(127,127,127,1.00) 74.31%,rgba(0,0,0,1.00) 92.70%,rgba(0,0,0,1.00) 99.92%);
+}
+.footer-col-1 {
+    flex: 1;
+    margin-right: 13px;
+    margin-bottom: 52px;
+    margin-left: 20px;
+}
+.footer-col-1 h2 {
+    text-align: center;
+}
+.form-row {
+    width: 100%;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    display: inline-block;
+}
+.form-row input {
+    width: 40%;
+    margin: 0 15px 15px 0;
+    padding-left: 10px;
+    background: none;
+    border: none;
+    font-size: 14px;
+    color: #fff;
+    border-bottom: 1px solid rgba(255,255,255,1.0);
+}
+.form-row label {
+    font-size: 14px;
+    color: #000000;
+ 
+}
+::placeholder {
+    color: #000;
+    
+}
+.footer-col-2 {
+    flex: 2;
+    text-align: center;
 }
 
 @media (max-width: 768px){
@@ -143,10 +200,6 @@ body {
 .home-photo img {
     margin-left: 71px;
 }
-.home-intro quote .author {
-    margin-right: 4px;
-    text-align: center;
-}
 .home {
     display: flex;
     flex-direction: column-reverse;
@@ -158,12 +211,10 @@ body {
     display: flex;
     flex-direction: column;
 }
-.content {
+#content {
     font-size: 12px;
     display: flex;
     flex-direction: column;
-}
-body {
 }
 .card {
     margin-bottom: 9px;
