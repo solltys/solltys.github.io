@@ -1,7 +1,12 @@
-.container {
+html. body {
     width: 100vw;
     height: 100vh;
     margin: 0;
+}
+html {
+    font-size: 100%;
+}
+.container {
     background-color: #000000;
     overflow-x: hidden;
 }
@@ -315,6 +320,53 @@ ul li {
     display: flex;
     flex-direction: column-reverse;
 }
+.footer-col-2 {
+    flex: 3;
+    text-align: center;
+    display: flex;
+    width: 92%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.footer-col-2 nav, .footer-col-2 .additional {
+    font-family: "Dapifer Medium", Tahoma, "Times New Roman", sans-serif;
+    font-size: 13px;
+    text-align: center;
+    display: flex;
+    border-radius: 15px;
+    transition: all .5s;
+    -webkit-box-shadow: inset 0px 0px;
+    box-shadow: inset 0px 0px;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+    }
+.form-row input{
+    padding-top: 5px;
+    padding-bottom: 2px;
+    width: 97%;
+}
+.form-row textarea, .form-row select {
+    padding-top: 5px;
+    padding-bottom: 2px;
+    width: 50%;
+}
+footer button {
+    font-size: 14px;
+    font-weight: 400;
+    background: none;
+    border: 2px solid #ffd200;
+    cursor: pointer;
+    height: 25px;
+    width: 25.5%;
+    border-radius: 50px;
+    color: #fff;
+    margin-left: auto;
+    padding: 0;
+    margin-right: auto;
+    position: absolute;
+    right: 30px;
+}
 }
 
 @media (max-width: 600px){
@@ -364,6 +416,14 @@ ul li {
     background-image: -o-linear-gradient(270deg,rgba(254,254,254,1.00) 0%,rgba(188,191,193,1.00) 90.41%,rgba(52,52,52,1.00) 95.86%,rgba(0,0,0,1.00) 99.80%);
     background-image: linear-gradient(180deg,rgba(254,254,254,1.00) 0%,rgba(188,191,193,1.00) 90.41%,rgba(52,52,52,1.00) 95.86%,rgba(0,0,0,1.00) 99.80%);
     transform: scale(1.02);
+}
+.footer-col-1 h2 {
+    font-size: 18px;
+}
+.footer-col-2 {
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
 }
 .footer-col-2 a:hover {
     transform: scale(2.2);
