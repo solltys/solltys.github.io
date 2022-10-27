@@ -27,7 +27,7 @@
         </div>
         <div class="bottom-content">
             <div class="card"> <img href="" src="assets/images/portfolio_sm.jpg" alt="my portfolio image"/> </div>
-            <div class="card"> <img href="" src="assets/images/blog_small.jpg" alt="my blog image"/></div>
+            <div class="card"> <a href="blog/index.html"><img href="" src="assets/images/blog_small.jpg" alt="my blog image"/></a></div>
             <div class="card"> <img href="" src="assets/images/whoAmI_sm.jpg" alt="who am I image"/> </div>
         </div>
     </div>
@@ -41,8 +41,10 @@
                         <input type="text" id="lastName" placeholder="Last Name" required>
                     </div>
                     <div class="form-row">
-                        <input  type="email" placeholder="Email Address" required></div>
-                        <div class="form-row"><label for="contactReason">I would like to hear more about - </label>
+                        <input type="email" placeholder="Email Address" required>
+                    </div>
+                    <div class="form-row" id="email">
+                        <label for="contactReason">I would like to hear more about - </label>
                         <select name="contactReason" required>
                             <option value="">.....</option>
                             <option value="portfolio">Portfolio</option>
@@ -50,15 +52,37 @@
                             <option value="colaboration">Colaboration</option>
                         </select>
                     </div>
-                    <div class="form-row">
+                    <div class="form-row " id="message">
                         <label for="message">Your Message..</label>
-                        <textarea name="message" id="message" cols="30" rows="5"></textarea>
+                        <textarea name="message" cols="30" rows="5"></textarea>
                     </div>
+                    <button type="submit" value="Submit">Submit</button>
                 </form>
             </div>
-             <div class="footer-col-2">Additional</div>
+            <div class="footer-col-2">
+                <nav class="footer-nav">
+                    <h3>My Page</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html">Portfolio</a></li>
+                        <li><a href="index.html">Blog</a></li>
+                        <li><a href="index.html">About me</a></li>
+                    </ul>
+                </nav>
+                <div class="additional">
+                    <h3>External Links</h3>
+                    <ul>
+                        <li><a href="https://www.facebook.com/pawel.soltys.16" target="_blank">Facebook</a></li>
+                        <li><a href="https://www.linkedin.com/in/mrsoltys/" target="_blank">LinkedIn</a></li>
+                        <li><a href="https://github.com/solltys" target="_blank">Github</a></li>
+                        <li><a href="https://www.youtube.com/channel/UCE5-e0q6BRbTSo1zMVGNFkw" target="_blank">YouTube</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
-              
+        <div class="footer-footer">
+            <p>&copy; Pawel Soltys 2022. All rights reserved</p>
+            </div>
     </footer>
 </div>
 </body>

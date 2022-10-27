@@ -1,0 +1,48 @@
+/* CSS Document */
+.Moto-logo {
+    height: 200px;
+    width: auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.blog-content {
+    font-size: 16px;
+    text-align: justify;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: inline-block;
+
+}
+.blog-photo {
+    margin-right: 0px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding-top: 20PX;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    float: left;
+    max-height: 200px;
+    clear: both;
+}
+.blog-head {
+    font-size: 26px;
+    text-align: center;
+}
+.blog-foot {
+    padding-right: 10px;
+    padding-left: 10px;
+}
+.blog {
+    margin-bottom: 50px;
+}
+.blog {
+    border: 2px solid;
+    border-radius: 5px;
+}
+
+#blog-table {
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
