@@ -6,12 +6,66 @@ html. body {
 html {
     font-size: 100%;
 }
+body {
+    margin: 0;
+}
+footer button {
+    font-size: 14px;
+    font-weight: 400;
+    background: none;
+    border: 2px solid #ffd200;
+    cursor: pointer;
+    height: 25px;
+    width: 25.5%;
+    border-radius: 50px;
+    color: #fff;
+    margin-left: auto;
+    padding: 0;
+    margin-right: auto;
+    position: absolute;
+    right: 30px;
+}
+footer button:hover {
+    border: none;
+    background: #ffd200;
+}
+footer #message, footer #email {
+    display: flex;
+    justify-content: flex-start;
+}
+footer .footer-body {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    background-image: -webkit-linear-gradient(270deg,rgba(255,255,255,1.00) 0%,rgba(252,252,252,1.00) 14.55%,rgba(211,210,210,1.00) 31.76%,rgba(170,170,170,1.00) 47.49%,rgba(149,147,147,1.00) 60.80%,rgba(127,127,127,1.00) 74.31%,rgba(0,0,0,1.00) 92.70%,rgba(0,0,0,1.00) 99.92%);
+    background-image: -moz-linear-gradient(270deg,rgba(255,255,255,1.00) 0%,rgba(252,252,252,1.00) 14.55%,rgba(211,210,210,1.00) 31.76%,rgba(170,170,170,1.00) 47.49%,rgba(149,147,147,1.00) 60.80%,rgba(127,127,127,1.00) 74.31%,rgba(0,0,0,1.00) 92.70%,rgba(0,0,0,1.00) 99.92%);
+    background-image: -o-linear-gradient(270deg,rgba(255,255,255,1.00) 0%,rgba(252,252,252,1.00) 14.55%,rgba(211,210,210,1.00) 31.76%,rgba(170,170,170,1.00) 47.49%,rgba(149,147,147,1.00) 60.80%,rgba(127,127,127,1.00) 74.31%,rgba(0,0,0,1.00) 92.70%,rgba(0,0,0,1.00) 99.92%);
+    background-image: linear-gradient(180deg,rgba(255,255,255,1.00) 0%,rgba(252,252,252,1.00) 14.55%,rgba(211,210,210,1.00) 31.76%,rgba(170,170,170,1.00) 47.49%,rgba(149,147,147,1.00) 60.80%,rgba(127,127,127,1.00) 74.31%,rgba(0,0,0,1.00) 92.70%,rgba(0,0,0,1.00) 99.92%);
+}
+ul li {
+}
+#content {
+    font-family: Tahoma, "Times New Roman";
+    text-align: left;
+    padding-right: 20px;
+    padding-left: 10px;
+    padding-bottom: 20px;
+    background-image: -webkit-linear-gradient(270deg,rgba(0,0,0,1.00) 0%,rgba(255,255,255,1.00) 100%);
+    background-image: -moz-linear-gradient(270deg,rgba(0,0,0,1.00) 0%,rgba(255,255,255,1.00) 100%);
+    background-image: -o-linear-gradient(270deg,rgba(0,0,0,1.00) 0%,rgba(255,255,255,1.00) 100%);
+    background-image: linear-gradient(180deg,rgba(0,0,0,1.00) 0%,rgba(255,255,255,1.00) 100%);
+}
+#message label,
+#message textarea,
+#email input,
+#email label {
+    width: 50%;
+    box-sizing: border-box;
+    padding-right: 0px;
+}
 .container {
     background-color: #000000;
     overflow-x: hidden;
-}
-body {
-    margin: 0;
 }
 .home {
     width: 100vw;
@@ -54,17 +108,9 @@ body {
     margin-left: auto;
     margin-right: auto;
 }
-.quote {
-    font-size: 15px;
-    font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, serif;
-    margin-right: 10vw;
-    margin-left: 8vw;
-    text-align: right;
-    margin-bottom: 10%;
-}
-.home .home-intro a {
-    text-decoration: none;
-    color: #000000;
+.home-intro button:hover {
+    background-color: #0F5468;
+    border: medium outset #D1ECEB;
 }
 .home-intro button  {
     background-color: #DCE9ED;
@@ -74,20 +120,17 @@ body {
     padding: 10px;
     transition: all .1s ease-in-out;
 }
-.home-intro button:hover {
-    background-color: #0F5468;
-    border: medium outset #D1ECEB;
+.home .home-intro a {
+    text-decoration: none;
+    color: #000000;
 }
-#content {
-    font-family: Tahoma, "Times New Roman";
-    text-align: left;
-    padding-right: 20px;
-    padding-left: 10px;
-    padding-bottom: 20px;
-    background-image: -webkit-linear-gradient(270deg,rgba(0,0,0,1.00) 0%,rgba(255,255,255,1.00) 100%);
-    background-image: -moz-linear-gradient(270deg,rgba(0,0,0,1.00) 0%,rgba(255,255,255,1.00) 100%);
-    background-image: -o-linear-gradient(270deg,rgba(0,0,0,1.00) 0%,rgba(255,255,255,1.00) 100%);
-    background-image: linear-gradient(180deg,rgba(0,0,0,1.00) 0%,rgba(255,255,255,1.00) 100%);
+.quote {
+    font-size: 15px;
+    font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, serif;
+    margin-right: 10vw;
+    margin-left: 8vw;
+    text-align: right;
+    margin-bottom: 10%;
 }
 .top-content  {
     margin-left: auto;
@@ -137,15 +180,6 @@ body {
     transform:scale(1.1);
     cursor: pointer;
 }
-footer .footer-body {
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    background-image: -webkit-linear-gradient(270deg,rgba(255,255,255,1.00) 0%,rgba(252,252,252,1.00) 14.55%,rgba(211,210,210,1.00) 31.76%,rgba(170,170,170,1.00) 47.49%,rgba(149,147,147,1.00) 60.80%,rgba(127,127,127,1.00) 74.31%,rgba(0,0,0,1.00) 92.70%,rgba(0,0,0,1.00) 99.92%);
-    background-image: -moz-linear-gradient(270deg,rgba(255,255,255,1.00) 0%,rgba(252,252,252,1.00) 14.55%,rgba(211,210,210,1.00) 31.76%,rgba(170,170,170,1.00) 47.49%,rgba(149,147,147,1.00) 60.80%,rgba(127,127,127,1.00) 74.31%,rgba(0,0,0,1.00) 92.70%,rgba(0,0,0,1.00) 99.92%);
-    background-image: -o-linear-gradient(270deg,rgba(255,255,255,1.00) 0%,rgba(252,252,252,1.00) 14.55%,rgba(211,210,210,1.00) 31.76%,rgba(170,170,170,1.00) 47.49%,rgba(149,147,147,1.00) 60.80%,rgba(127,127,127,1.00) 74.31%,rgba(0,0,0,1.00) 92.70%,rgba(0,0,0,1.00) 99.92%);
-    background-image: linear-gradient(180deg,rgba(255,255,255,1.00) 0%,rgba(252,252,252,1.00) 14.55%,rgba(211,210,210,1.00) 31.76%,rgba(170,170,170,1.00) 47.49%,rgba(149,147,147,1.00) 60.80%,rgba(127,127,127,1.00) 74.31%,rgba(0,0,0,1.00) 92.70%,rgba(0,0,0,1.00) 99.92%);
-}
 .footer-col-1 {
     flex: 3;
     margin-right: auto;
@@ -184,18 +218,6 @@ footer .footer-body {
     font-size: 14px;
     color: #000000;
  
-}
-footer #message, footer #email {
-    display: flex;
-    justify-content: flex-start;
-}
-#message label,
-#message textarea,
-#email input,
-#email label {
-    width: 50%;
-    box-sizing: border-box;
-    padding-right: 0px;
 }
 .footer-col-2 {
     flex: 3;
@@ -262,32 +284,6 @@ footer #message, footer #email {
     background-image: linear-gradient(180deg,rgba(254,254,254,1.00) 0%,rgba(188,191,193,1.00) 77.84%,rgba(52,52,52,1.00) 89.82%,rgba(0,0,0,1.00) 99.80%);
     transform: scale(1.02);
 }
-
-footer button {
-    font-size: 14px;
-    font-weight: 400;
-    background: none;
-    border: 2px solid #ffd200;
-    cursor: pointer;
-    height: 25px;
-    width: 18.5%;
-    border-radius: 50px;
-    color: #fff;
-    margin-left: auto;
-    margin-right: auto;
-}
-footer button:hover {
-    border: none;
-    background: #ffd200;
-}
-footer button {
-    margin-left: auto;
-    margin-right: auto;
-    position: absolute;
-    right: 0px;
-}
-ul li {
-}
 .footer-footer  {
     color: #FFFFFF;
     background-color: #000000;
@@ -350,22 +346,6 @@ ul li {
     padding-top: 5px;
     padding-bottom: 2px;
     width: 50%;
-}
-footer button {
-    font-size: 14px;
-    font-weight: 400;
-    background: none;
-    border: 2px solid #ffd200;
-    cursor: pointer;
-    height: 25px;
-    width: 25.5%;
-    border-radius: 50px;
-    color: #fff;
-    margin-left: auto;
-    padding: 0;
-    margin-right: auto;
-    position: absolute;
-    right: 30px;
 }
 }
 
