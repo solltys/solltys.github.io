@@ -1,0 +1,1 @@
+.side-nav {    width: 100vw;    position: relative;    bottom: -50px;    left: -20px;}.side-nav ul li {    display: inline-block;    }.side-nav ul li a {    text-decoration: none;    font-size: 13px;    color: #000000;}
