@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Lesson 1</title>
+<script>
+    function showWelcome(){
+           document.getElementById('div2').innerHTML = 'Hello from the header!';
+    }
+</script>
+</head>
+<body onLoad="showWelcome()">
+<h1>Lesson 1</h1>
+<p>Welcome to lesson 1</p>
+<script>
+    document.write('This text has come from inline JavaScript');
+</script>
+<div id="div1"></div>
+<script>
+    document.getElementById('div1').innerHTML = 'Hello from the footer';
+</script>
+<div id="div2"></div>
+
+<div id="div3"></div>
+<script src="lesson1.js"></script>
+</body>
+</html>
